@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+body {
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-position: top -400px left -400px, bottom -700px right -200px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container {
+    margin: 100px;
+}
+.card {
+    margin: 0 auto;
+    position: relative;
+    width: 350px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.card .header .victor{
+    top: 20%;
+    right: 35%;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.card .content h2 {
+    text-align: center;
+    margin-top: 90px;
+    color: hsl(229, 23%, 23%);
+}
+.card .content p {
+    margin-top: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+}
+.card .content span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.stats {
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-size: 18px;
+}
+.stats::before {
+    height: .1rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 89%);
+    content: '';
+    display: block;
+}
+.card .content .stats ul{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    list-style: none;
+}
+.card .content .stats ul li span{ 
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: hsl(229, 23%, 23%);
+}
+.card .content .stats ul li{ 
+    color: hsl(0, 0%, 59%);
+}
+.card .content .stats ul li span{ 
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+footer {
+    margin-top: 100px;
+}
+@media (max-width: 375px) {
+    body {
+        background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+        background-color: hsl(185, 75%, 39%);
+        background-position: top -300px  left  -700px, bottom -500px right -750px;
+    }
+    .container {
+        margin: 50% 0 0 0;
+    }
+}
